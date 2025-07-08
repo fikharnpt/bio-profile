@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: aqua;
+      height: 100vh;
+    }
+    
+  </style>
+</head>
+<body>
+  <h1 id="judul">hello dunia</h1> 
+  <button id="merah">Merah</button>
+  <button id="hijau">Hijau</button>
+  <button id="biru">Biru</button>
+  <button id="hitam">hitam</button>
+
+  <script>
+    const h1 = document.getElementById('judul');
+    document.getElementById('merah').addEventListener('click', function() {
+      h1.style.color = 'red';
+    });
+    document.getElementById('hijau').addEventListener('click', function() {
+      h1.style.color = 'green';
+    });
+    document.getElementById('biru').addEventListener('click', function() {
+      h1.style.color = 'blue';
+    });
+    document.getElementById('hitam').addEventListener('click', function() {
+      h1.style.color = 'black';
+    } )
+  </script>
+</body>
+</html>
